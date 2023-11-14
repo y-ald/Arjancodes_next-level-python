@@ -8,14 +8,17 @@ def calculate_average(numbers: Collection[int]) -> float:
     total = sum(numbers)
     return total / len(numbers)
 
+def calculate_combination_averages(data: list):
+    # TODO: Use itertools to generate all possible combinations of length 2 from the data list
+
+    # TODO: Calculate the average of each combination and store the results in a new list
+    ...
 
 def main() -> None:
     data = [1, 2, 3, 4, 5]
 
-    # TODO: Use itertools to generate all possible combinations of length 2 from the data list
 
-    # TODO: Calculate the average of each combination and store the results in a new list
-    averages: list[int] = []
+    averages: list[float] = calculate_combination_averages(data)
 
     # Print the average of each combination
     print("Averages of combinations:")

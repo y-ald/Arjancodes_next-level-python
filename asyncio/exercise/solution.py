@@ -1,10 +1,16 @@
 import asyncio
 
 
-async def fetch_data(url: str) -> str:
+async def fetch(url: str) -> str:
     # Simulate network delay
     await asyncio.sleep(2)
     return f"Data from {url}"
+
+
+async def retrieve_data(urls: list[str]) -> list[str]:
+    tasks = [fetch(url) for url in urls]
+    data = await asyncio.gather(*tasks)
+    return data
 
 
 async def main() -> None:
@@ -13,8 +19,8 @@ async def main() -> None:
         "https://www.google.com",
         "https://www.python.org",
     ]
-    tasks = [fetch_data(url) for url in urls]
-    data = await asyncio.gather(*tasks)
+
+    data = await retrieve_data(urls)
     print(data)
 
 

@@ -6,21 +6,24 @@ def is_prime(n: int) -> bool:
             return False
     return True
 
+def calculate_chained_permutations(data: list[int]) -> list[int]:
+    ...
 
 def main() -> None:
     # Test data
     data = [1, 2, 3, 4, 5]
-
+    
     # TODO: Use itertools to generate all permutations of the data list
 
     # TODO: Filter the permutations to keep only those where the first element is prime
 
     # TODO: Use itertools to chain together the filtered permutations
-    chained_permutations: list[int] = []
+    chained_permutations: list[int] = calculate_chained_permutations(data)
 
     # Print the sum of the chained permutations
-    print("Sum of chained permutations:", sum(chained_permutations))
+
+    return sum(chained_permutations)
 
 
 if __name__ == "__main__":
-    main()
+    main(data)
