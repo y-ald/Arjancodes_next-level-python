@@ -27,10 +27,7 @@ def main() -> None:
     # Use another generator expression to filter the total prices sequence
     # and keep only the orders with a price greater than $100
 
-    # Print all total prices above $100
-    print("Orders larger than $100:")
-    for price in filtered_prices:
-        print(f"  ${price:.2f}")
+
 
 
 if __name__ == "__main__":

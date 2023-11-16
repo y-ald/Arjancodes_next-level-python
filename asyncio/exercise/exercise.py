@@ -1,11 +1,12 @@
 import asyncio
 
 
-async def fetch_data(url: str) -> str:
+async def fetch(url: str) -> str:
     # Simulate network delay
     await asyncio.sleep(2)
     return f"Data from {url}"
 
+# TODO: Retrieve data from each of the above urls concurrently by creating a retrieve_data function
 
 async def main() -> None:
     urls = [
@@ -13,7 +14,8 @@ async def main() -> None:
         "https://www.google.com",
         "https://www.python.org",
     ]
-    # TODO: retrieve data from each of the above urls concurrently
+
+    
 
 
 if __name__ == "__main__":

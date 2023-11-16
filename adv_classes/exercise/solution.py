@@ -33,10 +33,12 @@ class Circle:
     @property
     def circumference(self) -> float:
         return 2 * pi * self._radius
-
+    
+def create_circle(radius: float) -> Circle:
+    return Circle(radius)
 
 def main() -> None:
-    circle = Circle(5.0)
+    circle = create_circle(5.0)
 
     # Test the properties
     circle.radius = 10
