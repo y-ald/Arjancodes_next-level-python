@@ -1,3 +1,11 @@
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+#
+# Exercise: Use generator expressions to calculate total prices and filter orders
+# Use generator expressions to calculate the total prices for each sales order and filter
+# orders with a total price greater than $100.
+#
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
 from dataclasses import dataclass
 from decimal import Decimal
 
@@ -21,13 +29,6 @@ def main() -> None:
         Order(product="C", quantity=2, price=Decimal("20.00")),
         Order(product="D", quantity=4, price=Decimal("45.00")),
     ]
-
-    # Use a generator expression to generate a sequence of total prices for each sales order
-
-    # Use another generator expression to filter the total prices sequence
-    # and keep only the orders with a price greater than $100
-
-
 
 
 if __name__ == "__main__":

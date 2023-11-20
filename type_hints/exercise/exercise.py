@@ -1,3 +1,12 @@
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+#
+# Exercise: Add type annotations to the functions
+# Add appropriate type annotations to the functions to specify the types of the parameters
+# and return values.
+#
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+
 def calculate_average(numbers):
     total = sum(numbers)
     return total / len(numbers)

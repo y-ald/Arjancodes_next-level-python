@@ -1,8 +1,17 @@
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+#
+# Exercise: Partial Function Application for Power, Square, and Cube
+# Use partial function application to define the square and cube functions based on the power
+# function so that the statements in the main function work correctly.
+#
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+
 def power(base: float, exponent: float) -> float:
     return base**exponent
 
 
-# Create two functions called square and cube that both has one argument
+# TODO: Define the square and cube functions using partial
 
 
 def main() -> None:

@@ -1,3 +1,10 @@
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+#
+# Exercise: Retrieve data from multiple URLs concurrently using asyncio
+# Implement a function named retrieve_data to retrieve data from each of the provided URLs
+# concurrently using asyncio and the fetch function. Use this function in the main function.
+#
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 import asyncio
 
 
@@ -6,7 +13,11 @@ async def fetch(url: str) -> str:
     await asyncio.sleep(2)
     return f"Data from {url}"
 
-# TODO: Retrieve data from each of the above urls concurrently by creating a retrieve_data function
+
+# TODO: Implement the retrieve_data function
+async def retrieve_data(urls: list[str]) -> list[str]:
+    pass
+
 
 async def main() -> None:
     urls = [
@@ -15,7 +26,7 @@ async def main() -> None:
         "https://www.python.org",
     ]
 
-    
+    # TODO: Use the retrieve_data function to retrieve data from the provided URLs concurrently
 
 
 if __name__ == "__main__":
