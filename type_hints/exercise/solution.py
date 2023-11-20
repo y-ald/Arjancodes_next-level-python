@@ -8,8 +8,10 @@ Python is a dynamically typed language and you can easily infer the type from th
 
 
 def calculate_average(numbers: list[int]) -> float:
-    total = sum(numbers)
-    return total / len(numbers)
+  length_of_numbers = len(numbers)
+  if length_of_numbers > 0:
+    return sum(numbers) / length_of_numbers
+  return 0.0
 
 
 def calculate_total_sales(sales: dict[str, int]) -> int:
