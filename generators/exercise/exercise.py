@@ -1,6 +1,6 @@
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 #
-# Exercise: Use generator expressions to calculate total prices and filter orders
+# Exercise: Calculate total prices and filter orders
 # Use generator expressions to calculate the total prices for each sales order and filter
 # orders with a total price greater than $100.
 #

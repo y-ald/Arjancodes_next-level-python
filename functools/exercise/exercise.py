@@ -1,6 +1,6 @@
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 #
-# Exercise: Partial Function Application for Power, Square, and Cube
+# Exercise: Partial function application for Square, and Cube
 # Use partial function application to define the square and cube functions based on the power
 # function so that the statements in the main function work correctly.
 #

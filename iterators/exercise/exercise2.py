@@ -1,9 +1,9 @@
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 #
-# Exercise: Use itertools to generate permutations and filter based on conditions
+# Exercise: Generate permutations and filter based on conditions
 # Use itertools to generate all permutations of the data list. Filter the permutations
 # to keep only those where the first element is prime. Use itertools to chain together the
-# filtered permutations.
+# filtered permutations. The expected output of this program is 1080.
 #
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 

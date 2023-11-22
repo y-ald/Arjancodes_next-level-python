@@ -1,6 +1,6 @@
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 #
-# Exercise: Use itertools to generate combinations and calculate averages
+# Exercise: Generate combinations and calculate averages
 # Use itertools to generate all possible combinations of length 2 from the data list.
 # Calculate the average of each combination and store the results in a new list.
 #

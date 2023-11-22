@@ -1,6 +1,6 @@
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 #
-# Exercise: Add type annotations to the functions
+# Exercise: Add type annotations
 # Add appropriate type annotations to the functions to specify the types of the parameters
 # and return values.
 #

@@ -1,6 +1,6 @@
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 #
-# Exercise: Implement a context manager decorator named file_manager
+# Exercise: Create a context manager
 # Implement a context manager decorator named file_manager that allows you to open a file
 # and write content to it. Use this decorator to write the content "Hello, world!" to the file.
 #

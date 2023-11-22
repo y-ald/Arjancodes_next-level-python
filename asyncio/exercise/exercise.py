@@ -2,7 +2,7 @@
 #
 # Exercise: Retrieve data from multiple URLs concurrently using asyncio
 # Implement a function named retrieve_data to retrieve data from each of the provided URLs
-# concurrently using asyncio and the fetch function. Use this function in the main function.
+# concurrently using asyncio and the fetch function.
 #
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 import asyncio
