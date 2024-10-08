@@ -1,6 +1,6 @@
-my_str = "Hello World"
-my_list = [34, 54, 65, 78]
-my_dict = {"one": 123, "two": 456, "three": 789}
+my_str: str = "Hello World"
+my_list: list[int] = [34, 54, 65, 78]
+my_dict: dict[str, int] = {"one": 123, "two": 456, "three": 789}
 
 len(my_str)  # 11
 len(my_list)  # 4
@@ -13,8 +13,11 @@ class Book:
         self.title = title
         self.pages = pages
 
-    def __len__(self):
+    def __len__(self) -> int:
         return self.pages
 
 
 print(len(Book("Robert Martin", "Clean Code", 464)))
+
+
+b: Book = Book("Links", "code", 434)
