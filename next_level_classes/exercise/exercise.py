@@ -11,12 +11,34 @@
 
 from dataclasses import dataclass
 
+PI: float = 3.14
+
 
 @dataclass
 class Circle:
     _radius: float
 
-    # TODO: Add the properties
+    @property
+    def radius(self) -> float:
+        return self._radius
+
+    @radius.setter
+    def radius(self, value: float) -> None:
+        if value < 0:
+            raise ValueError("Radius cannot be negative.")
+        self._radius = value
+
+    @property
+    def diameter(self) -> float:
+        return self._radius * 2
+
+    @property
+    def area(self) -> float:
+        return self._radius**2 * PI
+
+    @property
+    def circumference(self) -> float:
+        return self._radius * 2 * PI
 
 
 def create_circle(radius: float) -> Circle:
