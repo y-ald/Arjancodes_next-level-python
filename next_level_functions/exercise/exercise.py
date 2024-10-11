@@ -5,6 +5,7 @@
 # function so that the statements in the main function work correctly.
 #
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+from functools import partial
 
 
 def power(base: float, exponent: float) -> float:
@@ -12,7 +13,8 @@ def power(base: float, exponent: float) -> float:
 
 
 # TODO: Define the square and cube functions using partial
-
+square = partial(power, exponent = 2)
+cube = partial(power, exponent = 3)
 
 def main() -> None:
     print("Square of 5:", square(5))
