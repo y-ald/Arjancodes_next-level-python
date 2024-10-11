@@ -16,7 +16,7 @@ async def fetch(url: str) -> str:
 
 # TODO: Implement the retrieve_data function
 async def retrieve_data(urls: list[str]) -> list[str]:
-    pass
+    return await asyncio.gather(*[fetch(url) for url in urls])
 
 
 async def main() -> None:
@@ -27,7 +27,7 @@ async def main() -> None:
     ]
 
     # TODO: Use the retrieve_data function to retrieve data from the provided URLs concurrently
-
+    print(await retrieve_data(urls))
 
 if __name__ == "__main__":
     asyncio.run(main())
