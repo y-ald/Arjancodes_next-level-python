@@ -6,6 +6,7 @@
 # filtered permutations. The expected output of this program is 1080.
 #
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+import itertools
 
 
 def is_prime(n: int) -> bool:
@@ -18,7 +19,7 @@ def is_prime(n: int) -> bool:
 
 
 def calculate_chained_permutations(data: list[int]) -> list[int]:
-    ...
+    return itertools.chain.from_iterable(itertools.filterfalse(lambda x: is_prime(x[0]), itertools.permutations(data, 2)))
 
 
 def main() -> None:

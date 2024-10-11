@@ -5,7 +5,7 @@
 # Calculate the average of each combination and store the results in a new list.
 #
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
-
+import itertools
 from typing import Collection
 
 
@@ -19,7 +19,7 @@ def calculate_average(numbers: Collection[int]) -> float:
 def calculate_combination_averages(data: list) -> list[float]:
     # TODO: Use itertools to generate all possible combinations of length 2 from the data list
     # TODO: Calculate the average of each combination and store the results in a new list
-    ...
+    return [calculate_average(combination) for combination in itertools.combinations(data, 2)]
 
 
 def main() -> None:
