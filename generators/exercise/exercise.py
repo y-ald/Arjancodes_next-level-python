@@ -9,6 +9,8 @@
 from dataclasses import dataclass
 from decimal import Decimal
 
+from typing import Generator
+
 
 @dataclass
 class Order:
@@ -30,6 +32,16 @@ def main() -> None:
         Order(product="D", quantity=4, price=Decimal("45.00")),
     ]
 
+    def price_generators(orders: list[Order]) -> Generator[Decimal, list[Order], None]:
+        for order in orders:
+            yield calculate_total_price(order.quantity, order.price)
+
+    def price_generators_with_filter(orders: list[Order]) ->  Generator[Decimal, list[Order], None]:
+        for price in price_generators(orders):
+            if(price >= 100):
+                yield price
+
+    print([price for price in price_generators_with_filter(sales_orders)])
 
 if __name__ == "__main__":
     main()
